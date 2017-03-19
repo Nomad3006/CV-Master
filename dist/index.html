@@ -30,11 +30,13 @@ mail($admin_email, "$name", $message, "From:" . $email);
 	</head>
 
 	<body>
-		<div class="site-wrapper">
+		<div id="top" class="site-wrapper">
 			<div class="site-wrapper-inner">
 				<div class="masthead clearfix">
 					<div class="inner container">
-						<h3 class="masthead-brand">Cover</h3>
+						<h3 class="masthead-brand">
+<!--						<a href="#top"><span class="lgchar">T</span>homas <span class="lgchar">P</span>alamara <span class="lgchar">C</span>uriculum <span class="lgchar">V</span>itae</a>-->
+						</h3>
 						<nav class="nav nav-masthead">
 							<a class="nav-link" href="#profil">Mon profil</a>
 							<a class="nav-link" href="#parcours">Mon Parcours</a>
@@ -105,22 +107,24 @@ mail($admin_email, "$name", $message, "From:" . $email);
 						<p> Avec le développement d’une application Android, j’ai découvert des applications de programmation plus abstraites, plus immatérielles et moins limitées par les contraintes physiques. Une fois le DUT fini, je me suis dirigé vers une formation qui me correspondait plus : le WEB. </p>
 					</article>
 				</div>
-			</div>
 
-		</section>
-		<section id="typing" class="container">
-			<div class="scene row">
-				<figure class="dib col">
-					<div class="actor">
-						<div class="actor__prefix">&#60;</div>
-						<div id="me" class="actor__content"></div>
-					</div>
-					<img  id="bgimgvect" src="img/withoutcss.jpg" alt="">
-					<img src="img/pcvect.png" alt="">
-				</figure>
-
-				<div class="col">
-
+				<div class="scene row pt-md">
+					<article class="col-6">
+						<h3>Mes atouts</h3>
+						<p class="subtitle">Durant mes mises en situations professionnelles j'ai pu déterminer ce que je suis capable d'apporter à une entreprise.</p>
+						<p>Je peux faire preuve d'autonomie. Je n'ai aucun mal à me mettre à jour et à utiliser les moyens en ma possession pour avancer et surmonter les obstacles. Pendant mes différentes expériences professionnelles et personnelles j’ai dû me former moi même aux outils et aux concepts auxquels j’avais affaire.</p>
+						<p>J'ai à coeur l'accomplissement des tâches qui me sont confiées, toujours dans le soucis des détails et dans le respect des conditions qui me sont fixées.
+							<br>
+							J'ai également un bon relationnel qui favorise les relations avec les clients et les collègues et ma curiosité me motive à garder un oeil sur les technologies qui m'entourent et à en maitriser de nouvelles </p>
+					</article>
+					<figure class="dib offset-1 col-5">
+						<div class="actor bg-dark">
+							<div class="actor__prefix">&#60;</div>
+							<div id="m" class="actor__content"></div>
+						</div>
+						<img  id="bgimgvect" src="img/withoutcss.jpg" alt="">
+						<img src="img/pcvect.png" alt="">
+					</figure>
 				</div>
 			</div>
 		</section>
@@ -193,33 +197,92 @@ mail($admin_email, "$name", $message, "From:" . $email);
 				</div>
 			</div>
 		</section>
-		<section id="test">
-			<article id="integration-text" class="row">
+		<section id="competence" class="container">
+			<article id="integration-text">
 				<h4>Integration Web</h4>
-				<p class="col">Je maitrise l'ensemble des outils d'intégration WEB, la plus part de leur frameworks et les principaux CMS. Ils me permettent de réaliser simplement et rapidement des page Web</p>
-				<ul class="col">
-					<li class="li_title">Langages :</li>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>SASS</li>
-					<li>LESS</li>
-					<li class="li_title">Frameworks :</li>
-					<li>Bootstrap (v4)</li>
-					<li>Foundation </li>
-					<li class="li_title">CMS :</li>
-					<li>WordPress</li>
-					<li>Prestashop</li>
-				</ul>
+				<p>Je maitrise l'ensemble des outils d'intégration WEB, la plus part de leur frameworks et les principaux CMS. Ils me permettent de réaliser simplement et rapidement des page Web</p>
+				<div class="row">
+					<ul class="col">
+						<li class="li_title">Langages</li>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>SASS</li>
+						<li>LESS</li>
+					</ul>
+					<ul class="col">
+						<li class="li_title">Frameworks</li>
+						<li>Bootstrap (v4)</li>
+						<li>Foundation </li>
+					</ul>
+					<ul class="col">
+						<li class="li_title">CMS</li>
+						<li>WordPress</li>
+						<li>Prestashop</li>
+					</ul>
+				</div>
 			</article>
 			<article id="psd-text">
 				<h4>Webdesign</h4>
-				<p></p>
+				<p>Grace à photoshop je peux donner vie à vos idées pour créer le site qui vous correspond le mieux !</p>
+				<div class="row">
+					<ul class="col">
+						<li class="li_title">Langages</li>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>SASS</li>
+						<li>LESS</li>
+					</ul>
+					<ul class="col">
+						<li class="li_title">Frameworks</li>
+						<li>Bootstrap (v4)</li>
+						<li>Foundation </li>
+					</ul>
+					<ul class="col">
+						<li class="li_title">CMS</li>
+						<li>WordPress</li>
+						<li>Prestashop</li>
+					</ul>
+				</div>
 			</article>
 			<article id="tools-text">
 				<h4>Outils</h4>
+				<p>Au cours de mes differentes experiences j'ai appris à utiliser des outils tous plus utiles les uns que les autres. Ils me facilite la vie et me font gagner en efficacité. Et d'autre qui ne me sont d'aucune utilité pour le web mais qui contribuent à ma culture.</p>
+				<div class="row">
+					<ul class="col">
+						<li class="li_title">Versionnage</li>
+						<li>Git</li>
+						<li>Github</li>
+					</ul>
+					<ul class="col">
+						<li class="li_title">Editeur de texte</li>
+						<li>Brackets</li>
+						<li>Sublime text</li>
+					</ul>
+					<ul class="col">
+						<li class="li_title">Autres</li>
+						<li>Environement de développement Android</li>
+						<li>Environement de développement pour microcontroleurs</li>
+						<li>Logiciels de conception cartes électroniques</li>
+					</ul>
+				</div>
 			</article>
 			<article id="prog-text">
 				<h4>Programation</h4>
+				<p>La programation me permet de rendre les créations dynamiques. Que se soit pour créer des effet toujours plus fous ou pour réagir aux données communiquées par le serveur.</p>
+				<div class="row">
+					<ul class="col">
+						<li class="li_title">Pour le web</li>
+						<li>PHP</li>
+						<li>Java-Script</li>
+						<li>JQuery (Framework)</li>
+					</ul>
+					<ul class="col">
+						<li class="li_title">Autres</li>
+						<li>C</li>
+						<li>C#</li>
+						<li>Java</li>
+					</ul>
+				</div>
 			</article>
 			<article id="comm-text">
 				<h4>Communication</h4>
@@ -253,7 +316,8 @@ mail($admin_email, "$name", $message, "From:" . $email);
 			</div>
 			<div class="overlay on-overlay"></div>
 		</section>
-		<section id="competence">
+<!--
+		<section id="test">
 			<div class="container">
 				<h2>Mes competences</h2>
 				<div class="row">
@@ -331,6 +395,7 @@ mail($admin_email, "$name", $message, "From:" . $email);
 				</div>
 			</div>
 		</section>
+-->
 		<section id="portfolio">
 			<h2 class="bg-dark">Portfolio</h2>
 			<div id="folio-ave">
@@ -372,7 +437,7 @@ mail($admin_email, "$name", $message, "From:" . $email);
 			</div>
 		</section>
 		<section id="contact" class="bg-dark">
-			<!--			<form class="container" action="" method="post" onsubmit="return check()">-->
+<!--					<form class="container" action="" method="post" onsubmit="return check()">-->
 			<form class="container" action="" method="post">
 				<h3>Besoin d'un renseignement ? Une proposition à me faire ? Contactez-moi.</h3>
 				<div class="row justify-content-center">
