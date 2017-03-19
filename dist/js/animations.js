@@ -19,11 +19,38 @@ $(document).ready(function(){
 
 function display_txt(x,y){
 	console.info(x);
-	$('#test li').removeClass('isactive');
+	$('#competence li').removeClass('isactive');
 	$(x).addClass("isactive");
-	$('#test article').css({opacity : 0});
+	$('#competence article').css({opacity : 0});
 	setTimeout(function(){
 		document.getElementById(y).style.opacity = 1;
 	},500);
 
 };
+
+var clickDelay      = 500,
+    clickDelayTimer = null;
+
+$('.burger-click-region').on('click', function () {
+
+  if(clickDelayTimer === null) {
+
+    var $burger = $(this);
+    $burger.toggleClass('active');
+    $burger.parent().toggleClass('is-open');
+	$(".nav").css({display:"block"});
+	$(".site-wrapper-inner").css({padding:"300px;"});
+
+    if(!$burger.hasClass('active')) {
+      $burger.addClass('closing');
+		$(".nav").css({display:"none"});
+    }
+
+    clickDelayTimer = setTimeout(function () {
+      $burger.removeClass('closing');
+      clearTimeout(clickDelayTimer);
+      clickDelayTimer = null;
+    }, clickDelay);
+  }
+});
+

@@ -168,6 +168,9 @@ h2{
 			padding-top: 5px;
 		}
 	}
+	figure{
+		min-height: 471px;
+	}
 	img{
 		position: absolute;
 	}
@@ -200,7 +203,6 @@ h2{
 		animation: blink 800ms infinite;
 	}
 }
-
 
 //---------------section parcours-------------------
 
@@ -345,10 +347,12 @@ form{
 	article{
 		position: absolute;
 		background-color: #fff;
+		margin:0 auto;
 		height: 300px;
 		width: 80%;
 		right: 0;
 		left: 0;
+		opacity:0;
 		transition: all .5s ease;
 	}
 
@@ -358,7 +362,7 @@ form{
 		overflow: hidden;
 		position: absolute;
 		bottom: 0;
-		left: 36%;
+		left: 29vw;
 	}
 	article ul{
 		text-align: center;
@@ -538,6 +542,49 @@ form{
 		.no-csstransforms .cn-wrapper li{
 			height:3em;
 			width:3em;
+		}
+	}
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+	#profil figure{
+		img{
+		left: 15%;
+		}
+	}
+	#portfolio{
+		overflow: hidden;
+		aside{
+			margin-left: -55px;
+		}
+	}
+	#competence #cache{
+		left: 21vw;
+	}
+}
+
+@media(min-width: 576px) and (max-width: 768px){
+		#competence #cache{
+		left: 11vw;
+	}
+		#portfolio{
+		overflow: hidden;
+		aside{
+			margin-left: -81px;
+			font-size: 80%;
+		}
+	}
+}
+
+@media(min-width: 480px) and (max-width: 576px){
+		#competence #cache{
+		left: 10vw;
+	}
+		#portfolio{
+		overflow: hidden;
+		aside{
+			margin-left: -81px;
+			font-size: 70%;
 		}
 	}
 }

@@ -35,8 +35,17 @@ mail($admin_email, "$name", $message, "From:" . $email);
 				<div class="masthead clearfix">
 					<div class="inner container">
 						<h3 class="masthead-brand">
-<!--						<a href="#top"><span class="lgchar">T</span>homas <span class="lgchar">P</span>alamara <span class="lgchar">C</span>uriculum <span class="lgchar">V</span>itae</a>-->
+							<!--						<a href="#top"><span class="lgchar">T</span>homas <span class="lgchar">P</span>alamara <span class="lgchar">C</span>uriculum <span class="lgchar">V</span>itae</a>-->
 						</h3>
+						<div class="containerburger">
+							<div class="burger-menu">
+								<div class="burger-click-region">
+									<span class="burger-menu-piece"></span>
+									<span class="burger-menu-piece"></span>
+									<span class="burger-menu-piece"></span>
+								</div>
+							</div>
+						</div>
 						<nav class="nav nav-masthead">
 							<a class="nav-link" href="#profil">Mon profil</a>
 							<a class="nav-link" href="#parcours">Mon Parcours</a>
@@ -47,8 +56,8 @@ mail($admin_email, "$name", $message, "From:" . $email);
 					</div>
 				</div>
 
-				<div class="cover-container">
-					<!--
+				<!--				<div class="cover-container">-->
+				<!--
 <div class="inner cover">
 <h1 class="cover-heading">Thomas Palamara</h1>
 <p class="lead mb-md">Développeur Front-End</p>
@@ -59,28 +68,28 @@ mail($admin_email, "$name", $message, "From:" . $email);
 </div>
 
 -->
-					<ul id="techList">
-						<li class="html5 fading">html5</li>
-						<li class="css3 fading">css3</li>
-						<li class="javascript decal_top">javascript</li>
-						<li class="jquery decal_bot">jquery</li>
-						<li class="wordpress decal_left">wordpress</li>
-						<li class="standards decal_bot">standards</li>
-						<li class="front decal_right">Front - End</li>
-						<li class="photoshop decal_right">Photoshop</li>
-						<li class="seo decal_top">seo</li>
-						<li class="name decal_left">Thomas Palamara</li>
-						<li class="web decal_top">web</li>
-						<li class="ajax decal_bot">ajax</li>
-						<li class="responsive decal_left">responsive</li>
-						<li class="php decal_right">Php browsers</li>
-						<li class="dev decal_top">dev</li>
-						<li class="resume fading">Résumé</li>
-					</ul>
-					<a class="scroll" href="#profil"><span></span>Scroll</a>
-				</div>
-
+				<ul id="techList">
+					<li class="html5 fading">html5</li>
+					<li class="css3 fading">css3</li>
+					<li class="javascript decal_top">javascript</li>
+					<li class="jquery decal_bot">jquery</li>
+					<li class="wordpress decal_left">wordpress</li>
+					<li class="standards decal_bot">standards</li>
+					<li class="front decal_right">Front - End</li>
+					<li class="photoshop decal_right">Photoshop</li>
+					<li class="seo decal_top">seo</li>
+					<li class="name decal_left">Thomas Palamara</li>
+					<li class="web decal_top">web</li>
+					<li class="ajax decal_bot">ajax</li>
+					<li class="responsive decal_left">responsive</li>
+					<li class="php decal_right">Php browsers</li>
+					<li class="dev decal_top">dev</li>
+					<li class="resume fading">Résumé</li>
+				</ul>
+				<a class="scroll" href="#profil"><span></span>Scroll</a>
 			</div>
+
+			<!--			</div>-->
 
 		</div>
 		<section id="profil" class="bg-light">
@@ -109,7 +118,7 @@ mail($admin_email, "$name", $message, "From:" . $email);
 				</div>
 
 				<div class="scene row pt-md">
-					<article class="col-6">
+					<article class="col-lg-6">
 						<h3>Mes atouts</h3>
 						<p class="subtitle">Durant mes mises en situations professionnelles j'ai pu déterminer ce que je suis capable d'apporter à une entreprise.</p>
 						<p>Je peux faire preuve d'autonomie. Je n'ai aucun mal à me mettre à jour et à utiliser les moyens en ma possession pour avancer et surmonter les obstacles. Pendant mes différentes expériences professionnelles et personnelles j’ai dû me former moi même aux outils et aux concepts auxquels j’avais affaire.</p>
@@ -117,7 +126,7 @@ mail($admin_email, "$name", $message, "From:" . $email);
 							<br>
 							J'ai également un bon relationnel qui favorise les relations avec les clients et les collègues et ma curiosité me motive à garder un oeil sur les technologies qui m'entourent et à en maitriser de nouvelles </p>
 					</article>
-					<figure class="dib offset-1 col-5">
+					<figure class="dib col-lg-6">
 						<div class="actor bg-dark">
 							<div class="actor__prefix">&#60;</div>
 							<div id="m" class="actor__content"></div>
@@ -198,7 +207,7 @@ mail($admin_email, "$name", $message, "From:" . $email);
 			</div>
 		</section>
 		<section id="competence" class="container">
-			<article id="integration-text">
+			<article id="integration-text" style="opacity:1;">
 				<h4>Integration Web</h4>
 				<p>Je maitrise l'ensemble des outils d'intégration WEB, la plus part de leur frameworks et les principaux CMS. Ils me permettent de réaliser simplement et rapidement des page Web</p>
 				<div class="row">
@@ -299,7 +308,7 @@ mail($admin_email, "$name", $message, "From:" . $email);
 						<li onclick="display_txt(this,'prog-text')">
 							<a class="flaticon-tools" href="#"></a>
 						</li>
-						<li onclick="display_txt(this,'integration-text')">
+						<li onclick="display_txt(this,'integration-text')" class="isactive">
 							<a class="flaticon-html-coding" href="#"></a>
 						</li>
 						<li onclick="display_txt(this,'psd-text')">
@@ -316,85 +325,85 @@ mail($admin_email, "$name", $message, "From:" . $email);
 			</div>
 			<div class="overlay on-overlay"></div>
 		</section>
-<!--
-		<section id="test">
-			<div class="container">
-				<h2>Mes competences</h2>
-				<div class="row">
-					<div class="col-6">
-						<h3>Web :</h3>
-						<ul class="bar-red">
-							<li>CSS</li>
-							<div><div style="width: 90%"></div></div>
-							<li>HTML</li>
-							<div><div style="width: 90%"></div></div>
-							<li>Bootstrap Framework</li>
-							<div><div style="width: 80%"></div></div>
-							<li>Sass</li>
-							<div><div style="width: 80%"></div></div>
-						</ul>
-						<ul class="bar-orange">
-							<li>Less</li>
-							<div><div style="width: 70%"></div></div>
-							<li>Photoshop</li>
-							<div><div style="width: 70%"></div></div>
-							<li>JavaScript</li>
-							<div><div style="width: 60%"></div></div>
-						</ul>
-						<ul class="bar-yellow">
-							<li>Foundation Framework</li>
-							<div><div style="width: 50%"></div></div>
-							<li>Git/Github</li>
-							<div><div style="width: 50%"></div></div>
-							<li>WordPress</li>
-							<div><div style="width: 40%"></div></div>
-						</ul>
-						<ul class="bar-green">
-							<li>Jquery</li>
-							<div><div style="width: 20%"></div></div>
-							<li>Prestashop</li>
-							<div><div style="width: 20%"></div></div>
-							<li>PHP</li>
-							<div><div style="width: 20%"></div></div>
-						</ul>
-					</div>
-					<div class="col-3">
-						<h3>Programmation :</h3>
-						<ul class="bar-orange">
-							<li>C</li>
-							<div><div style="width: 60%"></div></div>
-							<li>Microcontrôleur</li>
-							<div><div style="width: 60%"></div></div>
-						</ul>
-						<ul class="bar-yellow">
-							<li>Java</li>
-							<div><div style="width: 40%"></div></div>
-						</ul>
-						<ul class="bar-green">
-							<li>XML</li>
-							<div><div style="width: 30%"></div></div>
-							<li>C#</li>
-							<div><div style="width: 30%"></div></div>
-						</ul>
-					</div>
-					<div class="col-3">
-						<h3>Langues :</h3>
-						<ul class="bar-red">
-							<li>Français</li>
-							<div><div></div></div>
-						</ul>
-						<ul class="bar-orange">
-							<li>Anglais</li>
-							<div><div style="width: 80%"></div></div>
-						</ul>
-						<ul class="bar-green">
-							<li>Espagnol</li>
-							<div><div style="width: 20%"></div></div>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
+		<!--
+<section id="test">
+<div class="container">
+<h2>Mes competences</h2>
+<div class="row">
+<div class="col-6">
+<h3>Web :</h3>
+<ul class="bar-red">
+<li>CSS</li>
+<div><div style="width: 90%"></div></div>
+<li>HTML</li>
+<div><div style="width: 90%"></div></div>
+<li>Bootstrap Framework</li>
+<div><div style="width: 80%"></div></div>
+<li>Sass</li>
+<div><div style="width: 80%"></div></div>
+</ul>
+<ul class="bar-orange">
+<li>Less</li>
+<div><div style="width: 70%"></div></div>
+<li>Photoshop</li>
+<div><div style="width: 70%"></div></div>
+<li>JavaScript</li>
+<div><div style="width: 60%"></div></div>
+</ul>
+<ul class="bar-yellow">
+<li>Foundation Framework</li>
+<div><div style="width: 50%"></div></div>
+<li>Git/Github</li>
+<div><div style="width: 50%"></div></div>
+<li>WordPress</li>
+<div><div style="width: 40%"></div></div>
+</ul>
+<ul class="bar-green">
+<li>Jquery</li>
+<div><div style="width: 20%"></div></div>
+<li>Prestashop</li>
+<div><div style="width: 20%"></div></div>
+<li>PHP</li>
+<div><div style="width: 20%"></div></div>
+</ul>
+</div>
+<div class="col-3">
+<h3>Programmation :</h3>
+<ul class="bar-orange">
+<li>C</li>
+<div><div style="width: 60%"></div></div>
+<li>Microcontrôleur</li>
+<div><div style="width: 60%"></div></div>
+</ul>
+<ul class="bar-yellow">
+<li>Java</li>
+<div><div style="width: 40%"></div></div>
+</ul>
+<ul class="bar-green">
+<li>XML</li>
+<div><div style="width: 30%"></div></div>
+<li>C#</li>
+<div><div style="width: 30%"></div></div>
+</ul>
+</div>
+<div class="col-3">
+<h3>Langues :</h3>
+<ul class="bar-red">
+<li>Français</li>
+<div><div></div></div>
+</ul>
+<ul class="bar-orange">
+<li>Anglais</li>
+<div><div style="width: 80%"></div></div>
+</ul>
+<ul class="bar-green">
+<li>Espagnol</li>
+<div><div style="width: 20%"></div></div>
+</ul>
+</div>
+</div>
+</div>
+</section>
 -->
 		<section id="portfolio">
 			<h2 class="bg-dark">Portfolio</h2>
@@ -402,15 +411,15 @@ mail($admin_email, "$name", $message, "From:" . $email);
 				<a href="#"></a>
 				<div class="container">
 					<article class="row">
-						<figure class="col-sm-3">
+						<figure class="col-4 col-lg-3">
 							<img src="img/Sans-titre-1.jpg" alt="">
 						</figure>
-						<div class="col-sm-4 offset-1 flex-align">
+						<div class="col-6 col-lg-6 flex-align">
 							<h4>Agence Voyage Extreme</h4>
 							<p>Site d'une agence de voyage fictive pour des voyage et croisieres dans des pays nordiques et aux pôles</p>
 							<span class="tag">Jquery - Bootstrap3 - Responsive Sass</span>
 						</div>
-						<aside class="flex-align col offset-1">
+						<aside class="flex-align col-2 col-lg-3">
 							<i class="flaticon-right-arrow"></i>
 						</aside>
 					</article>
@@ -421,15 +430,15 @@ mail($admin_email, "$name", $message, "From:" . $email);
 				<a href="#"></a>
 				<div class="container">
 					<article class="row">
-						<figure class="col-sm-3">
+						<figure class="col-4 col-lg-3">
 							<img src="img/Sans-titre-2.jpg" alt="">
 						</figure>
-						<div class="col-sm-4 offset-1 flex-align">
+						<div class="col-6 col-lg-4 offset-lg-1 flex-align">
 							<h4>La cuisine de Léon</h4>
 							<p>Site d'un chef à domicile proposant cours, dîners et dégustation de vins</p>
 							<span class="tag">Jquery - Bootstrap3 - Responsive Sass</span>
 						</div>
-						<aside class="flex-align col offset-1">
+						<aside class="flex-align col-2 col-lg-5 offset-lg-1">
 							<i class="flaticon-right-arrow"></i>
 						</aside>
 					</article>
@@ -437,22 +446,22 @@ mail($admin_email, "$name", $message, "From:" . $email);
 			</div>
 		</section>
 		<section id="contact" class="bg-dark">
-<!--					<form class="container" action="" method="post" onsubmit="return check()">-->
+			<!--					<form class="container" action="" method="post" onsubmit="return check()">-->
 			<form class="container" action="" method="post">
 				<h3>Besoin d'un renseignement ? Une proposition à me faire ? Contactez-moi.</h3>
 				<div class="row justify-content-center">
-					<div class="form-group col-3">
+					<div class="form-group col-8 col-lg-3">
 						<label for="name-input" class=" col-form-label">Nom</label>
 						<input class="form-control" type="text" name="name" value="" id="name-input"  onblur="check(this)" >
 					</div>
-					<div class="form-group col-3">
+					<div class="form-group col-8 col-lg-3">
 						<label for="email-input" class="col-form-label">Email</label>
 						<input class="form-control" type="email" name="email" value="" id="email-input" onblur="check(this)">
 					</div>
 				</div>
 
 				<div class="form-group row justify-content-center">
-					<div class="col-6">
+					<div class="col-8 col-lg-6">
 						<label for="msg-input" class="col-form-label">Message</label>
 						<textarea class="vam form-control" name="message" id="msg-input" onblur="check(this)"></textarea>
 						<button type="submit" id="subButton" class="btn btn-default mt-md">Envoyer votre message</button>
